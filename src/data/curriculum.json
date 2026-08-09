@@ -1,0 +1,300 @@
+{
+  "modules": [
+    {
+      "moduleNumber": 1,
+      "title": "Module 1 — Foundations of Prompt Engineering & In-Context Learning",
+      "days": [
+        {
+          "dayNumber": 1,
+          "title": "Advanced Prompt Engineering & Few-Shot Prompting",
+          "objectives": ["Master zero-shot and few-shot prompt structuring", "Optimize system role directives and context windows", "Eliminate prompt ambiguity for complex tasks"],
+          "tools": ["Gemini API", "LangChain", "OpenAI SDK"],
+          "type": "Core",
+          "moduleNumber": 1
+        },
+        {
+          "dayNumber": 2,
+          "title": "Structured Outputs & Function Calling",
+          "objectives": ["Enforce strict JSON schema responses using Zod & Pydantic", "Implement function calling specifications", "Handle schema validation errors gracefully"],
+          "tools": ["Zod", "Pydantic", "Gemini Structured Output"],
+          "type": "Applied",
+          "moduleNumber": 1
+        },
+        {
+          "dayNumber": 3,
+          "title": "Chain-of-Thought & Reasoning Traces",
+          "objectives": ["Implement explicit step-by-step reasoning prompts", "Parse and evaluate intermediate thought steps", "Reduce logical hallucination in multi-step problem solving"],
+          "tools": ["CoT Prompting", "Guidance", "Instructor"],
+          "type": "Advanced",
+          "moduleNumber": 1
+        }
+      ]
+    },
+    {
+      "moduleNumber": 2,
+      "title": "Module 2 — RAG & Vector Space Engineering",
+      "days": [
+        {
+          "dayNumber": 4,
+          "title": "High-Dimensional Vector Embeddings & Distance Metrics",
+          "objectives": ["Compare Cosine, Dot Product, and Euclidean distance metrics", "Generate normalized text embeddings", "Analyze vector space clustering and semantic drift"],
+          "tools": ["OpenAI Embeddings", "HuggingFace", "NumPy"],
+          "type": "Core",
+          "moduleNumber": 2
+        },
+        {
+          "dayNumber": 5,
+          "title": "Vector Indexing & HNSW Skip-List Optimization",
+          "objectives": ["Understand HNSW graph skip-list indexing", "Tune M and efConstruction parameters for recall vs latency", "Implement vector index compaction"],
+          "tools": ["Pinecone", "Qdrant", "Milvus", "FAISS"],
+          "type": "Applied",
+          "moduleNumber": 2
+        },
+        {
+          "dayNumber": 6,
+          "title": "Advanced Retrieval & Hybrid Search",
+          "objectives": ["Combine dense vector retrieval with BM25 sparse keyword search", "Implement Cohere Rerank cross-encoders", "Optimize reciprocal rank fusion (RRF)"],
+          "tools": ["BM25", "Cohere Rerank", "Hybrid Retrieval Engine"],
+          "type": "Advanced",
+          "moduleNumber": 2
+        },
+        {
+          "dayNumber": 7,
+          "title": "GraphRAG & Knowledge Graph Context Retrieval",
+          "objectives": ["Construct entity-relation knowledge graphs from unstructured text", "Execute sub-graph traversal for multi-hop reasoning", "Merge graph context into RAG prompt buffers"],
+          "tools": ["Neo4j", "LlamaIndex Graph", "NetworkX"],
+          "type": "System Design",
+          "moduleNumber": 2
+        }
+      ]
+    },
+    {
+      "moduleNumber": 3,
+      "title": "Module 3 — Model Context Protocol & Tool Integration",
+      "days": [
+        {
+          "dayNumber": 8,
+          "title": "MCP Protocol Standards & JSON-RPC Schemas",
+          "objectives": ["Understand MCP resource, tool, and prompt abstractions", "Define JSON-RPC 2.0 transport schemas", "Implement client-server handshake protocols"],
+          "tools": ["MCP SDK", "TypeScript", "FastMCP"],
+          "type": "Core",
+          "moduleNumber": 3
+        },
+        {
+          "dayNumber": 9,
+          "title": "Building Custom MCP Server Resources & Tools",
+          "objectives": ["Expose REST and database endpoints as MCP tools", "Handle streaming progress notifications", "Validate tool execution input parameters"],
+          "tools": ["Node.js", "Express", "MCP Server SDK"],
+          "type": "Applied",
+          "moduleNumber": 3
+        },
+        {
+          "dayNumber": 10,
+          "title": "Multi-Server MCP Client Routing & Security",
+          "objectives": ["Manage multi-server MCP client pools", "Inject authentication tokens securely across tools", "Implement transport fallback and reconnection"],
+          "tools": ["MCP Client", "Auth Headers", "Proxy Gateways"],
+          "type": "Advanced",
+          "moduleNumber": 3
+        },
+        {
+          "dayNumber": 11,
+          "title": "Production MCP Debugging & Telemetry",
+          "objectives": ["Inspect raw JSON-RPC message payloads", "Track tool invocation latency with OpenTelemetry", "Debug transport disconnects in high-load setups"],
+          "tools": ["OpenTelemetry", "Jaeger", "MCP Inspector"],
+          "type": "System Design",
+          "moduleNumber": 3
+        }
+      ]
+    },
+    {
+      "moduleNumber": 4,
+      "title": "Module 4 — Agentic AI & Autonomous Workflows",
+      "days": [
+        {
+          "dayNumber": 12,
+          "title": "ReAct Pattern & Tool Execution Loops",
+          "objectives": ["Build Reasoning + Acting state loops", "Implement max-iteration safety bounds", "Handle tool execution exceptions automatically"],
+          "tools": ["LangGraph", "AutoGen", "CrewAI"],
+          "type": "Core",
+          "moduleNumber": 4
+        },
+        {
+          "dayNumber": 13,
+          "title": "Multi-Agent Collaboration & Orchestration",
+          "objectives": ["Design supervisor-worker multi-agent topologies", "Implement inter-agent handoff state machines", "Resolve agent execution deadlocks"],
+          "tools": ["LangGraph Multi-Agent", "CrewAI Teams"],
+          "type": "Applied",
+          "moduleNumber": 4
+        },
+        {
+          "dayNumber": 14,
+          "title": "State Management & Checkpointing in Agents",
+          "objectives": ["Persist agent state transitions in PostgreSQL/Redis", "Implement time-travel rewind and replay", "Manage state migration across agent versions"],
+          "tools": ["Redis", "PostgreSQL", "LangGraph Checkpointer"],
+          "type": "Advanced",
+          "moduleNumber": 4
+        },
+        {
+          "dayNumber": 15,
+          "title": "Human-in-the-Loop & Approval Triggers",
+          "objectives": ["Add explicit human approval breakpoints for high-risk actions", "Build UI interrupt and resume handlers", "Audit human feedback telemetry"],
+          "tools": ["Interrupt Handlers", "Webhooks", "Slack SDK"],
+          "type": "Applied",
+          "moduleNumber": 4
+        },
+        {
+          "dayNumber": 16,
+          "title": "Autonomous Memory & Reflection Loops",
+          "objectives": ["Implement episodic, semantic, and working memory stores", "Build self-reflection loops after task execution", "Consolidate long-term candidate state"],
+          "tools": ["MemGPT", "Breeth Memory", "MemoryBank"],
+          "type": "System Design",
+          "moduleNumber": 4
+        }
+      ]
+    },
+    {
+      "moduleNumber": 5,
+      "title": "Module 5 — Fine-Tuning, Quantization & PEFT",
+      "days": [
+        {
+          "dayNumber": 17,
+          "title": "Parameter-Efficient Fine-Tuning (PEFT & LoRA)",
+          "objectives": ["Understand Low-Rank Adaptation (LoRA) mathematics", "Configure rank (r) and alpha parameters", "Inject LoRA adapter weights into base LLMs"],
+          "tools": ["HuggingFace PEFT", "PyTorch", "Axolotl"],
+          "type": "Core",
+          "moduleNumber": 5
+        },
+        {
+          "dayNumber": 18,
+          "title": "QLoRA & 4-bit Quantization (BitsAndBytes)",
+          "objectives": ["Execute 4-bit NormalFloat (NF4) quantization", "Train LoRA adapters on consumer GPUs", "Merge adapter weights into FP16 base models"],
+          "tools": ["BitsAndBytes", "Unsloth", "Transformers"],
+          "type": "Applied",
+          "moduleNumber": 5
+        },
+        {
+          "dayNumber": 19,
+          "title": "Dataset Preparation & Instruction Tuning",
+          "objectives": ["Curate high-quality instruction-following datasets", "Apply Direct Preference Optimization (DPO)", "Filter noisy or toxic dataset pairs"],
+          "tools": ["Datasets Library", "Synthetic Data", "DPO"],
+          "type": "Advanced",
+          "moduleNumber": 5
+        },
+        {
+          "dayNumber": 20,
+          "title": "Model Evaluation & Benchmark Auditing",
+          "objectives": ["Benchmark models on MMLU, GSM8K, and HumanEval", "Audit domain-specific recall accuracy", "Detect catastrophic forgetting in fine-tuned LLMs"],
+          "tools": ["MMLU", "GSM8K", "Ragas", "DeepEval"],
+          "type": "System Design",
+          "moduleNumber": 5
+        }
+      ]
+    },
+    {
+      "moduleNumber": 6,
+      "title": "Module 6 — Enterprise Model Serving & Infrastructure",
+      "days": [
+        {
+          "dayNumber": 21,
+          "title": "High-Throughput Serving with vLLM & PagedAttention",
+          "objectives": ["Deploy vLLM inference server instances", "Configure PagedAttention virtual memory blocks", "Optimize throughput for multi-tenant requests"],
+          "tools": ["vLLM", "Ray Serve", "Docker"],
+          "type": "Core",
+          "moduleNumber": 6
+        },
+        {
+          "dayNumber": 22,
+          "title": "TensorRT-LLM & Hardware Acceleration",
+          "objectives": ["Compile FP16/INT8 TensorRT-LLM engines", "Benchmark CUDA kernel execution", "Optimize GPU memory bandwidth utilization"],
+          "tools": ["TensorRT-LLM", "NVIDIA CUDA", "Triton Server"],
+          "type": "Applied",
+          "moduleNumber": 6
+        },
+        {
+          "dayNumber": 23,
+          "title": "KV Cache Optimization & Continuous Batching",
+          "objectives": ["Implement iteration-level continuous batching", "Manage KV cache memory fragmentation", "Monitor time-to-first-token (TTFT) and inter-token latency"],
+          "tools": ["PagedAttention", "vLLM Engine", "Prometheus"],
+          "type": "Advanced",
+          "moduleNumber": 6
+        },
+        {
+          "dayNumber": 24,
+          "title": "Model Gateway Routing & Fallback Circuit Breakers",
+          "objectives": ["Build multi-provider LLM gateway routers", "Configure automatic failover circuit breakers", "Implement rate-limiting and cost-budget quotas"],
+          "tools": ["LiteLLM", "Cloudflare AI Gateway", "Kong"],
+          "type": "System Design",
+          "moduleNumber": 6
+        }
+      ]
+    },
+    {
+      "moduleNumber": 7,
+      "title": "Module 7 — AI Security, Red-Teaming & Safety Guardrails",
+      "days": [
+        {
+          "dayNumber": 25,
+          "title": "Prompt Injection Defense & Input Sanitization",
+          "objectives": ["Detect direct and indirect prompt injections", "Implement input sanitization classifiers", "Enforce strict system prompt boundaries"],
+          "tools": ["Guardrails AI", "NeMo Guardrails", "ReLLM"],
+          "type": "Core",
+          "moduleNumber": 7
+        },
+        {
+          "dayNumber": 26,
+          "title": "Hallucination Mitigation & Grounding Verification",
+          "objectives": ["Verify response claims against ground-truth source documents", "Compute factual consistency scores", "Filter ungrounded model outputs in real time"],
+          "tools": ["Ragas", "TruLens", "Grounding API"],
+          "type": "Applied",
+          "moduleNumber": 7
+        },
+        {
+          "dayNumber": 27,
+          "title": "AI Red-Teaming & Vulnerability Scanning",
+          "objectives": ["Execute automated adversarial red-teaming scans", "Test models against OWASP LLM Top 10 vulnerabilities", "Generate security compliance audit briefs"],
+          "tools": ["Garak", "Promptfoo", "OWASP LLM Top 10"],
+          "type": "Advanced",
+          "moduleNumber": 7
+        },
+        {
+          "dayNumber": 28,
+          "title": "Data Privacy, Anonymization & PII Shielding",
+          "objectives": ["Detect and mask PII in user inputs before model transmission", "Comply with GDPR/HIPAA AI data processing rules", "Implement zero-retention logging policies"],
+          "tools": ["Presidio", "DataGardener", "Shield"],
+          "type": "System Design",
+          "moduleNumber": 7
+        }
+      ]
+    },
+    {
+      "moduleNumber": 8,
+      "title": "Module 8 — Capstone Enterprise System Architecture",
+      "days": [
+        {
+          "dayNumber": 29,
+          "title": "Production Microservices & Distributed AI Infra",
+          "objectives": ["Architect scalable microservice clusters for AI workloads", "Configure auto-scaling based on GPU queue depth", "Deploy Helm charts for enterprise AI services"],
+          "tools": ["Kubernetes", "Helm", "Istio"],
+          "type": "Core",
+          "moduleNumber": 8
+        },
+        {
+          "dayNumber": 30,
+          "title": "End-to-End SLA Monitoring & Cost Optimization",
+          "objectives": ["Set up Grafana dashboards for p95/p99 LLM metrics", "Track cost per 1M tokens across models", "Optimize GPU node spot-instance provisioning"],
+          "tools": ["Datadog", "Prometheus", "Grafana"],
+          "type": "Applied",
+          "moduleNumber": 8
+        },
+        {
+          "dayNumber": 31,
+          "title": "Final Capstone Defense & Enterprise Architecture",
+          "objectives": ["Defend complete enterprise AI system architecture", "Demonstrate end-to-end resilience under simulated traffic spikes", "Deliver final recruiter-level technical assessment"],
+          "tools": ["Full Stack AI Suite", "Cloud Deployment", "Intervix Engine"],
+          "type": "Capstone",
+          "moduleNumber": 8
+        }
+      ]
+    }
+  ]
+}
